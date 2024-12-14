@@ -13,7 +13,15 @@
 
     <link rel="stylesheet" href="{{asset('css/admin/login.css')}}">
 
-
+    <div class="nav">
+        <div class="logo">
+            <h1 style="margin:0;padding:0">GetIt</h1>
+        </div>
+        <div class="lists">
+            <a href="{{route('front.home')}}">Home</a>
+            <a href="{{route('admin.register')}}">Register</a>
+        </div>
+    </div>
     <div class="error">
         @if(session('error'))
         <div class='container'>{{session('error')}}</div>
@@ -26,6 +34,8 @@
   </div>
     {{-- @include('admin.message') --}}
     {{-- <h1>Admin Login</h1> --}}
+
+
             <div class="card">
                 <div class="card-header">{{ __('Admin Login') }}</div>
 

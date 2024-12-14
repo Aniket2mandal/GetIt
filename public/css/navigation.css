@@ -33,6 +33,7 @@ padding:0;
     position: relative;
     display: inline-block;
     margin-right: 10px;
+    margin-top:-10px;
 
 }
 
@@ -40,12 +41,14 @@ padding:0;
     position: absolute;
     /* top: -10px; */
     right: 88px;
-    background-color: rgb(247, 171, 31);
+    margin-right:30px;
+    background-color:#8a2be2 ;
     color: white;
     border-radius: 50%;
     padding: 3px 7px;
     font-size: 12px;
     display: none;
+    margin-top:-5px;
 }
 
 .nav img {
@@ -53,9 +56,10 @@ padding:0;
     height: 45px; /* Maintain aspect ratio */
     border-radius: 50%; /* Make it circular */
     cursor: pointer; /* Change cursor to pointer */
+margin-top:-10px;
 }
 .lists{
-margin-left:950px;
+margin-left:900px;
 margin-right:20px;
 margin-top:10px;
 display:flex;
@@ -78,5 +82,13 @@ align-items: center;
 }
 
 
-
+footer {
+    background-color: #6a0dad;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
 

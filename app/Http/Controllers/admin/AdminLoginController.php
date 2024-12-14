@@ -26,7 +26,7 @@ $request->password],$request->get('remember'))){
     $admin=Auth::guard('admin')->user();
 
     if($admin->role==2){
-    return redirect()->route('admin.dashboard');
+    return redirect()->route('categories.index');
     }else{
         $admin=Auth::guard('admin')->logout();
         return redirect()->route('front.index');

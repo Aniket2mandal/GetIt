@@ -14,16 +14,15 @@
     <div class="dashboard">
         <div class="left-dashboard">
             <div class="header">
-                <h1>Admin</h1>
+                <h1>Dashboard</h1>
             </div>
             <div class="dashboard-list">
                 <ul>
-                    <li><a href="{{route('admin.dashboard')}}">Dashboard</a></li>
-                    <li><a href="{{route('books.index')}}">Books</a></li>
-                    <li><a href="#">Orders</a></li>
+                    {{-- <li><a href="{{route('admin.dashboard')}}">Dashboard</a></li> --}}
                     <li><a href="{{route('users.index')}}">Users</a></li>
+                    <li><a href="{{route('books.index')}}">Products</a></li>
                     <li><a href="{{route('categories.index')}}">Categories</a></li>
-                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Orders</a></li>
                     <li><a href="#">Roles</a></li>
                     <li><a href="#">Permissions</a></li>
                     <li><a href="{{route('admin.logout')}}">Logout</a></li>
@@ -33,7 +32,7 @@
         <div class="right-dashboard">
             <div class="nav">
                 <div class="logo">
-                    <h1 style="margin:0;padding:0">LitShelf</h1>
+                    <h1 style="margin:0;padding:0">GetIt</h1>
                 </div>
                 <div class="nav-profile">
                     <a href="{{route('admin.profile')}}"><img src="{{asset('css/raw/profile.png')}}"></a>

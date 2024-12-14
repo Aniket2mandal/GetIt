@@ -11,7 +11,7 @@
 
     <div class="nav">
         <div class="logo">
-            <h1 style="margin:0;padding:0">LitShelf</h1>
+            <h1 style="margin:0;padding:0">GetIt</h1>
         </div>
         <div class="lists">
             <a href="{{route('front.home')}}">Home</a>

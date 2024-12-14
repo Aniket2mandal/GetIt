@@ -10,7 +10,7 @@
         @endif
     </div>
     <div class="category-header">
-        <h1>BOOKS TABLE</h1>
+        <h1>Products </h1>
         {{-- <a href="{{route('Category.createmail')}}" class="btn btn-danger" id="del_btn">Send Mail</a> --}}
     </div>
 
@@ -26,9 +26,9 @@ AFTER USING PLUCK FUNCTION
         <thead>
             <tr>
                 <th scope="col">S.N.</th>
-                <th scope="col">Title</th>
-                <th scope="col">Author</th>
-                <th scope="col">Published</th>
+                <th scope="col">Name Of Product</th>
+                <th scope="col">Company</th>
+                <th scope="col">Made in</th>
                 <th scope="col">Price</th>
                 <th scope="col">Description</th>
                 <th scope="col">Category</th>
@@ -52,9 +52,9 @@ AFTER USING PLUCK FUNCTION
                     {{-- <td>{{$categories->CategoryName}}</td> --}}
 
                     <td>
-                        @foreach($categories as $item)
-                        {{$item}}
-                        @endforeach
+
+                        {{$items->category->CategoryName}}
+
                     </td>
 
                     <td>
@@ -76,7 +76,7 @@ AFTER USING PLUCK FUNCTION
             {{-- @endforeach --}}
         </tbody>
     </table><br>
-    <a href="{{ route('books.create') }}"class=" btn-success">Add Books</a>
+    <a href="{{ route('books.create') }}"class=" btn-success">Add Product</a>
     {{-- <script>
     $(document).ready(function(){
         $("#del_btn").click(function(){

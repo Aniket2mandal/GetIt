@@ -11,7 +11,7 @@
        @endif
       </div>
     <div class="category-header">
-        <h1>CATEGORY TABLE</h1>
+        <h1>Categories</h1>
 {{-- <a href="{{route('Category.createmail')}}" class="btn btn-danger" id="del_btn">Send Mail</a> --}}
     </div>
 

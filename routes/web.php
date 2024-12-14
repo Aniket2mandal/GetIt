@@ -1,16 +1,17 @@
 <?php
 
+
 use Illuminate\Support\Facades\Route;
+
 use App\Http\Controllers\HomeController;
-
 use App\Http\Controllers\AboutController;
+
+
 use App\Http\Controllers\FrontController;
-
-
 use App\Http\Controllers\admin\BookController;
 use App\Http\Controllers\admin\UserController;
-use App\Http\Controllers\front\CartController;
 
+use App\Http\Controllers\front\CartController;
 use App\Http\Controllers\front\ShopController;
 use App\Http\Controllers\admin\ProfileController;
 use App\Http\Controllers\Esewa\PaymentController;
@@ -19,6 +20,7 @@ use App\Http\Controllers\admin\AdminHomeController;
 use App\Http\Controllers\front\FrontHomeController;
 use App\Http\Controllers\admin\AdminLoginController;
 use App\Http\Controllers\front\UserProfileController;
+use App\Http\Controllers\front\orders\OrderController;
 use App\Http\Controllers\admin\AdminRegisterController;
 
 /*
@@ -51,6 +53,7 @@ Route::group(['prefix'=>'account'],function(){
     Route::get('/index', [FrontHomeController::class, 'index'])->name('front.index');
     Route::get('/product/{id}', [ShopController::class, 'index'])->name('front.product');
     Route::get('/cart', [CartController::class, 'index'])->name('cart.page');
+    Route::get('/order',[OrderController::class,'index'])->name('front.order');
     Route::post('/pricestore', [CartController::class, 'store'])->name('pricestore');
     Route::post('/pricedelete/{id}', [CartController::class, 'delete'])->name('pricedelete');
     Route::get('profile',[UserProfileController::class,'index'])->name('user.profile');
@@ -74,7 +77,7 @@ Route::group(['prefix'=>'admin'],function(){
 
   });
   Route::group(['middleware'=>'admin.auth'],function(){
-    Route::get('/dashboard', [AdminHomeController::class, 'index'])->name('admin.dashboard');
+    // Route::get('/dashboard', [AdminHomeController::class, 'index'])->name('admin.dashboard');
     Route::get('/logout', [AdminHomeController::class, 'logout'])->name('admin.logout');
 
 

@@ -13,7 +13,7 @@
                 @csrf
 
                 <div class="form-group">
-                    <label for="Title">Title</label>
+                    <label for="Title">Name</label>
                     <input type="text" class="form-control" value="{{ old('Title') }}" name="Title">
                     {{-- Error Message --}}
                     @error('Title')
@@ -22,7 +22,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="Author">Author</label>
+                    <label for="Author">Company</label>
                     <input type="text" class="form-control" value="{{ old('Author') }}" name="Author">
                     {{-- Error Message --}}
                     @error('Author')
@@ -40,7 +40,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="PublishDate">Published</label>
+                    <label for="PublishDate">Made in</label>
                     <input type="date" class="form-control" value="{{ old('PublishDate') }}" name="PublishDate">
                     {{-- Error Message --}}
                     @error('PublishDate')
